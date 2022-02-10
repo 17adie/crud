@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Book</title>
+		<!-- css stylesheet for bootstrap design  -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/ladda-themeless.mins.css">
+		<link rel="stylesheet" href="css/sweetalert.css">
+		<link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/pagination-2.0.7.css">
+		
+		<link rel="stylesheet" href="css/custom.css">
+
+	</head>
+
+	<body>
+
+		<div id="navbar"></div>
+
+		<div class="content-body">
+			<div class="container-fluid mt-5">
+				<div class="row">
+						<div class="col-lg-12">
+								<div class="card">
+										<div class="card-header">Search Book</div>
+										<div class="card-body">
+                      <div class="mx-auto" style="width: 50%">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" id="search_value" placeholder="Enter Title, ISBN, Author, Publisher, Year Published or Category">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-success" id="btn-search_book" type="button">Search</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row justify-content-center book-results-card">
+                        <!-- data cards -->
+                      </div>
+                
+                  </div>
+                  <div class="pagination_container">
+                    <div class="center_pagination" id="book_pagination"></div>
+                  </div>
+                  
+								</div>
+                
+						</div>
+				</div>
+
+				
+
+		</div>
+	</body>
+	
+	<!-- javascript library for bootstrap design  -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<!-- <script src="js/jquery-3.3.1.slim.min.js"></script> -->
+	<script src="js/spin.min.js"></script>
+	<script src="js/ladda.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/pagination-2.1.5.min.js"></script>
+	
+	<script src="js/app.js"></script>
+	<script src="js/controllers/bookSearchController.js"></script>
+
+	<script type="text/javascript">
+        $(document).ready( function () {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+
+
+</html>

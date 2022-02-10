@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Book</title>
+		<!-- css stylesheet for bootstrap design  -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/ladda-themeless.mins.css">
+		<link rel="stylesheet" href="css/sweetalert.css">
+		<link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+
+		<link rel="stylesheet" href="css/custom.css">
+
+	</head>
+
+	<body>
+
+		<div id="navbar"></div>
+
+		<div class="content-body">
+			<div class="container-fluid mt-5">
+				<div class="row">
+						<div class="col-lg-12">
+								<div class="card">
+										<div class="card-header">Book Inventory</div>
+										<div class="card-body">
+												<a href="#" id="btn-add_new_book" class="btn btn-success" data-target="#modal-add_book" data-toggle="modal">
+                            <i class="fa fa-plus"></i> New Book</span>
+                        </a>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered table-hover" id="books_tbl">
+														
+												</table>
+											</div>
+										</div>
+								</div>
+						</div>
+				</div>
+
+				<!--    ADD AND EDIT BOOK MODAL-->
+				<div id="modal-add_book" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+									<h5 class="modal-title book_inv_modal_title">Add New Book</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+                </div>
+                <div class="modal-body custom-modal-height">
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="inp-title">Title</label> <span class="required"> * </span>
+                            <input type="text" class="form-control" id="inp-title" placeholder="Title">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inp-isbn">ISBN</label> <span class="required"> * </span>
+                            <input type="text" class="form-control" id="inp-isbn" placeholder="ISBN">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inp-author">Author</label> <span class="required"> * </span>
+                            <input type="text" class="form-control" id="inp-author" placeholder="Author">
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+												<div class="form-group col-md-4">
+                            <label for="inp-publisher">Publisher</label> <span class="required"> * </span>
+                            <input type="text" class="form-control" id="inp-publisher" placeholder="Publisher">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inp-year_published">Year Published</label> <span class="required"> * </span>
+                            <input type="text" class="form-control" id="inp-year_published" placeholder="Year Published">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inp-category">Category</label> <span class="required"> * </span>
+                            <input type="text" class="form-control" id="inp-category" placeholder="Category">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="btn-add_book" type="submit" class="btn btn-primary ladda-button" data-style="zoom-in"><span class="ladda-label"></span><i class="fa fa-check"></i> Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+		</div>
+	</body>
+	
+	<!-- javascript library for bootstrap design  -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<!-- <script src="js/jquery-3.3.1.slim.min.js"></script> -->
+	<script src="js/spin.min.js"></script>
+	<script src="js/ladda.min.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="js/controllers/bookInventoryController.js"></script>
+
+	<script type="text/javascript">
+        $(document).ready( function () {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+
+
+</html>

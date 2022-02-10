@@ -1,0 +1,38 @@
+.white-icon {
+  color: #fff;
+}
+
+.custom-error {
+  border: 1px solid red;
+}
+
+.dataTables_filter input {
+   width: 350px;
+   font-style: italic;
+   font-size: 12px;
+}
+
+.book_details {
+  line-height: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #858586;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #858585;
+}
+
+.pagination_container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.center_pagination {
+  display: inline-block !important;
+  vertical-align: middle;
+}
+
+.no_data_found {
+  background: #eee;
+  border-radius: 5px;
+  padding: 10px;
+}
